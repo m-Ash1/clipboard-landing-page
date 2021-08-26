@@ -63,6 +63,10 @@ body {
   -webkit-box-shadow: 0px 17px 28px -23px rgba(38, 112, 101, 1);
   -moz-box-shadow: 0px 17px 28px -23px rgba(38, 112, 101, 1);
   box-shadow: 0px 17px 28px -23px rgba(38, 112, 101, 1);
+  cursor: pointer;
+}
+.green:hover {
+  background-color: #5dccbb;
 }
 .purble {
   background-color: hsl(233, 100%, 69%);
@@ -70,6 +74,10 @@ body {
   -webkit-box-shadow: 0px 17px 49px -24px rgb(0 21 176);
   -moz-box-shadow: 0px 17px 49px -24px rgb(0 21 176);
   box-shadow: 0px 17px 49px -24px rgb(0 21 176);
+  cursor: pointer;
+}
+.purble:hover {
+  background-color: #8896ff;
 }
 
 .section-2 {
@@ -206,18 +214,23 @@ body {
 .section-7 {
   height: 40vh;
   display: flex;
+  justify-content: center;
+}
+.section-7-container {
+  display: flex;
   align-items: center;
   flex-direction: column;
+  width: 55%;
 }
 .sec-7.desc {
   margin-top: 25px;
-  width: 40%;
+  width: 80%;
 }
 .section-7 .buttons {
   margin-top: 70px;
   display: flex;
   justify-content: space-between;
-  width: 27%;
+  width: 50%;
 }
 
 footer {
@@ -240,6 +253,10 @@ footer {
 .col {
   line-height: 40px;
 }
+.col > span:hover {
+  color: #209f89;
+  cursor: pointer;
+}
 .col-3 {
   margin-bottom: 35px;
 }
@@ -248,4 +265,182 @@ footer {
   justify-content: space-around;
   align-items: center;
   width: 150px;
+}
+.icon:hover {
+  cursor: pointer;
+  fill: #209f89;
+}
+
+@media (max-width: 1440px) {
+  .sec-1-container {
+    width: 55%;
+  }
+  .section-5 {
+    height: 60vh;
+  }
+
+  .section-7 {
+    height: 50vh;
+  }
+  .sec-7.desc {
+    width: 95%;
+  }
+  .section-7 .buttons {
+    width: 65%;
+  }
+}
+
+@media (max-width: 475px) {
+  body {
+    background-image: url(../images/bg-header-mobile.png);
+  }
+  .section-1 {
+    height: 85vh;
+  }
+  .sec-1-container {
+    width: 90%;
+    height: 100%;
+    justify-content: center;
+  }
+  .slogan {
+    font-size: 38px;
+    text-align: center;
+  }
+  .logo {
+    margin-bottom: 60px;
+  }
+  .sec-1.desc {
+    font-size: 16px;
+    width: 90%;
+  }
+  .section-2 {
+    height: 35vh;
+  }
+  .buttons {
+    flex-direction: column;
+    width: 90% !important;
+  }
+  .buttons .btn {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .sec-2-container {
+    width: 90%;
+    justify-content: center;
+  }
+  .small-heading {
+    font-size: 32px;
+    text-align: center;
+  }
+  .desc {
+    font-size: 16px;
+  }
+  .section-3 {
+    height: 120vh;
+    flex-direction: column;
+  }
+  .left-part {
+    width: 100%;
+    position: initial;
+    display: flex;
+    justify-content: center;
+  }
+  .left-part img {
+    position: initial;
+    width: 80%;
+  }
+  .right-part {
+    width: 100%;
+  }
+  .right-part-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .box {
+    width: 90%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box.desc {
+    text-align: center;
+    line-height: 30px;
+  }
+  .box .title {
+    font-size: 24px;
+  }
+  .section-4 {
+    height: 75vh;
+  }
+  .section-4-container {
+    width: 90%;
+  }
+  .sec-4.desc {
+    width: 82%;
+  }
+  .sec-4-image {
+    margin-top: 70px;
+    width: 100%;
+  }
+  .section-5 {
+    height: 140vh;
+  }
+  .section-5-container {
+    width: 90%;
+  }
+  .second-part {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+  .section-6 {
+    height: 70vh;
+  }
+  .companies {
+    flex-direction: column;
+    width: 90%;
+  }
+  .companies img {
+    width: 40%;
+  }
+  .section-7{
+    height: 80vh;
+    align-items: center;
+  }
+  .section-7-container{
+    width: 90%;
+  }
+  footer{
+    flex-direction: column;
+    padding: 0;
+  }
+  .left-footer{
+    width: 100%;
+    flex-direction: column;
+  }
+  .links{
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0px 80px 30px 80px;
+  }
+  .left-footer .logo{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 20px;
+  }
+  .col-2{
+    margin-top: 20px;
+  }
+  .col-3{
+    margin-top: 20px;
+  }
 }
